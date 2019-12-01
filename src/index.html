@@ -3,64 +3,86 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Teka Teki Asal</title>
+  <title>Teka-Teki</title>
   <link rel="stylesheet" type="text/css" href="build/build.css">
-  <style>
-    table {
-      text-align: center;
-    }
-
-    td {
-      width: 40px;
-      height: 40px;
-    }
-
-    td input {
-      width: 40px;
-      height: 40px;
-      text-align: center;
-      font-size: 14px;
-      text-transform: uppercase;
-    }
-
-    .block {
-      background-color: #000;
-    }
-    p {
-      font-size: 12px;
-    }
-    
-    button {
-        display:inline-block;
-        color:#444;
-        border:1px solid #CCC;
-        box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
-        cursor:pointer;
-        vertical-align:middle;
-        max-width: 100%;
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="tts.js"></script>
+  <!-- bootstrap js -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+ <style>
+      table {
         text-align: center;
-        border-radius: 25px;
-        padding-left: 10px;
-        padding-right: 10px;
-        size: 12px;
-    }
-    button:active {
-        color:red;
-        box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
-    }
-    .title {
-      color: #CCC
-    }
-    .paragraph {
+      }
+
+      td {
+        width: 40px;
+        height: 40px;
+      }
+
+      td input {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+
+      .block {
+        background-color: #000;
+      }
+      p {
+        font-size: 12px;
+      }
+      
+      button {
+          display:inline-block;
+          color:#444;
+          border:1px solid #CCC;
+          box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+          cursor:pointer;
+          vertical-align:middle;
+          max-width: 100%;
+          text-align: center;
+          border-radius: 25px;
+          padding-left: 10px;
+          padding-right: 10px;
+          size: 12px;
+      }
+      button:active {
+          color:red;
+          box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+      }
+      .title {
+        color: #CCC
+      }
+      .paragraph {
       font-family: 'Times New Roman', Times, serif;
       font-size: large;
-      color: #CCC;
+      color: white;
       line-height: 1;
     }
-</style>
+    .pr-2 {
+      font-size: small;
+    }
+  </style>
 </head>
+
 <body>
 <article class="deck">
+  
+
+  <!-- <section>
+    <h2>Images</h2>
+    <img src="images/bespoke-logo.jpg">
+  </section> -->
 
   <section style="background-image : url('images/first.jpg');">
     <h2 class="title">Teka - Teki Asal</h2>
@@ -73,78 +95,660 @@
     </div>
   </section>
 
-  <section>
-    <h2>Images</h2>
-    <img src="images/bespoke-logo.jpg">
+  <!-- <section style="background-image : url('images/first.jpg');">
+    <h2 class="title">Cara Bermain</h2>
+    <div style="width: 300px; margin-left: 100px;">
+      <p class="paragraph">1. Perhatikan dengan cermat nomor soalnya, menurun atau mendatar. Karena jika salah, teka teki silang tidak akan terjawab dengan sempurna.</p>
+      <p class="paragraph">2. Jika sudah dapat pertanyaannya, cari kolom jawabannya. Kalau menurun, pengisiannya ke bawah. Kalau mendatar, pengisiannya ke samping (kanan)</p>
+      <p class="paragraph">3. Permainan terdiri dari 2 tahap</p>
+      <p class="paragraph">4. Dilarang Mengenggam Gawai/Handphone Smartphone menggunakan tangan</p>
+    </div>
+  </section> -->
+  <section class="bespoke-slide_1">
+      <div class="row">
+          
+          <div class="col" >
+              <h5 class="title">Tahap Satu</h5>
+              <div class="container">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#mendatar" style="margin: 10px;">Datar</a></li>
+                    <li><a href="#menurun" style="margin: 10px;">Turun</a></li>
+                  </ul>
+                
+                  <div class="tab-content">
+                    <div id="mendatar" class="tab-pane fade in active" >
+                      <ul>
+                        <li>
+                          <div class="divk pr-2" name="d1">
+                              Serigala muncul saat bulan...
+                          </div>
+                          <div class="pr-2"><button type="button" name="d1"
+                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="divk pr-2" name="d1">
+                              Bahasa inggrisnya meja adalah 
+                          </div>
+                          <div class="pr-2"><button type="button" name="d1"
+                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="divk pr-2" name="d1">
+                            Tidak merasa enak ?
+                          </div>
+                          <div class="pr-2"><button type="button" name="d1"
+                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                          </div>
+                        </li>
+                        <!-- <li>
+                          <div class="divk pr-2" name="d1">
+                            Andi Basah Kuyup Karena ? 
+                          </div>
+                          <div class="pr-2"><button type="button" name="d1"
+                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="divk pr-2" name="d1">
+                            Agus Pengen Bermain Bola Di ?
+                          </div>
+                          <div class="pr-2"><button type="button" name="d1"
+                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                          </div>
+                        </li> -->
+                      </ul>  
+                      
+
+                    </div>
+                    <div id="menurun" class="tab-pane fade">
+                      <ul>
+                        <li>
+                          <div class="divk pr-2" name="d1">
+                            Kota yang ada di sumatra ? 
+                          </div>
+                          <div class="pr-2"><button type="button" name="d1"
+                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="divk pr-2" name="d1">
+                           Serigala muncul saat bulan?
+                          </div>
+                          <div class="pr-2"><button type="button" name="d1"
+                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="divk pr-2" name="d1">
+                            Astrounot pergi keluar ?
+                          </div>
+                          <div class="pr-2"><button type="button" name="d1"
+                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                          </div>
+                        </li>
+                      </ul> 
+                    </div>
+                  </div>
+                </div>   
+          </div>
+          <div class="col-8" style="height: auto;">
+              <table class="tabel">
+
+                  <tr>
+                      
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                  </tr>
+                  <tr>
+                      
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                  </tr>
+
+                  <tr>
+                      
+                      <td class="block"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                  </tr>
+                 
+                  <tr>
+                      
+                      <td class="block"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                  </tr>
+
+                  <tr>
+                      
+                      <td class="block"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                  </tr>
+        
+                    <tr>
+                        <td class="block"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                    </tr>
+        
+                     <tr>
+                        <td class="block"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                    </tr>
+        
+                    <tr>
+                        <td class="block"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                    </tr>
+        
+                    <tr>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                    </tr>
+        
+                  
+              </table>
+          </div>
+      </div>
+    
   </section>
 
-  <section>
-    <h2>Keyboard Interaction</h2>
-    <h3>Powered by <a href="https://github.com/bespokejs/bespoke-keys">bespoke-keys</a></h3>
-  </section>
+  <section class="bespoke-slide_2" >
+      <div class="row" >
+          <div class="col" >
+              <h5 class="title">Tahap dua</h5>
+              <div class="container">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#mendatar2" style="margin: 10px;">Datar</a></li>
+                    <li><a href="#menurun2" style="margin: 10px;">Turun</a></li>
+                  </ul>
+                
+                  <div class="tab-content">
+                    <div id="mendatar2" class="tab-pane fade in active" >
+                      <ul>
+                        
+                        <li>
+                          <div class="divk pr-2" name="d1">
+                              Orang-orang yang bekerja di bidang musik seperti yovie, armand, glennm mereka semua namanya ...
+                          </div>
+                          <div class="pr-2"><button type="button" name="d1"
+                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="divk pr-2" name="d1">
+                            Ibu kota thailan berada di ?
+                          </div>
+                          <div class="pr-2"><button type="button" name="d1"
+                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                          </div>
+                        </li>
+                        <li>
+                            <div class="divk pr-2" name="d1">
+                              Yang berperan sebagai wonder women di layar lebar namanya ?
+                            </div>
+                            <div class="pr-2"><button type="button" name="d1"
+                                class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                            </div>
+                        </li>
+                    
+                      </ul>  
+                      
 
-  <section>
-    <h2>Touch Interaction</h2>
-    <h3>Powered by <a href="https://github.com/bespokejs/bespoke-touch">bespoke-touch</a></h3>
-  </section>
+                    </div>
+                    <div id="menurun2" class="tab-pane fade">
+                      <ul>
+                        <li>
+                          <div class="divk pr-2" name="d1">
+                           Yang menjaga narapidana agar tidak kabur adalah?
+                          </div>
+                          <div class="pr-2"><button type="button" name="d1"
+                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                          </div>
+                        </li>
+                        <li>
+                            <div class="divk pr-2" name="d1">Selain melalui pemungutan Suara, keputusan bisa diambil dengan cara
+                                
+                            </div>
+                            <div class="pr-2"><button type="button" name="d1"
+                                class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                            </div>
+                          </li>
+                        <li>
+                          <div class="divk pr-2" name="d1">
+                          Tumbuhan yang hidup di padang pasir?
+                          </div>
+                          <div class="pr-2"><button type="button" name="d1"
+                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="divk pr-2" name="d1">
+                            Soto betawi yang paling enak ada di?
+                          </div>
+                          <div class="pr-2"><button type="button" name="d1"
+                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                          </div>
+                        </li>
+                      </ul> 
+                    </div>
+                  </div>
+                </div>   
+          </div>
+          <div class="col-8" style="height: auto;">
+              <table class="tabel">
 
-  <section>
-    <h2>Responsive Slides</h2>
-    <h3>Powered by <a href="https://github.com/bespokejs/bespoke-scale">bespoke-scale</a></h3>
-  </section>
+                  <tr>
+                      
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                  </tr>
+                  <tr>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                  </tr>
 
-  <section>
-    <h2>Bullet List</h2>
-    <h3>Powered by <a href="https://github.com/bespokejs/bespoke-bullets">bespoke-bullets</a></h3>
-    <ul class="build build-items">
-      <li>Bullet 1</li>
-      <li>Bullet 2</li>
-      <li>Bullet 3</li>
-    </ul>
-  </section>
+                  <tr>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                  </tr>
+                 
+                  <tr>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                  </tr>
 
-  <section>
-    <iframe width="640" height="360" src="https://www.youtube.com/embed/AV3kYPutYfs?rel=0&amp;showinfo=0&amp;controls=0&amp;enablejsapi=1&amp;loop=1&amp;playlist=AV3kYPutYfs" frameborder="0" allowfullscreen data-volume="0"></iframe>
-  </section>
-
-  <section>
-    <h2>Syntax Highlighting</h2>
-    <h3>Powered by <a href="https://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/PrismJS/prism">Prism</a></h3>
-    <pre><code class="language-javascript">
-(function() {
-  function hanoi(n, a, b, c) {
-    return n ? hanoi(n - 1, a, c, b)
-        .concat([[a, b]])
-        .concat(hanoi(n - 1, c, b, a)) : [];
-  }
-  return hanoi(3, 'left', 'right', 'mid')
-    .map(function(d) {
-      return d[0] + ' -&gt; ' + d[1];
-    });
-})();</code></pre>
-  </section>
-
-  <section data-bespoke-hash="named-route">
-    <h2>Named Route</h2>
-    <h3>Powered by <a href="https://github.com/bespokejs/bespoke-hash">bespoke-hash</a></h3>
-    <p>Look up! This route has been named with a <em>data-bespoke-hash</em> attribute.</p>
-  </section>
-
-  <section>
-    <h2>Just the beginning…</h2><br>
-    <ul class="build build-items">
-      <li>Edit HTML markup in <em class="path">src/index.html</em></li>
-      <li>Edit <a href="http://stylus-lang.com">Stylus</a> styles in <em class="path">src/styles/user.styl</em></li>
-      <li>Edit JavaScript in <em class="path">src/scripts/main.js</em></li>
-    </ul>
-    <br>
-    <ul class="build">
-      <li><strong>Enjoy! :)</strong><a href="https://twitter.com/markdalgleish"> -@markdalgleish</a></li>
-    </ul>
+                  <tr>
+                      <td class="block"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                  </tr>
+        
+                    <tr>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                    </tr>
+        
+                     <tr>
+                        <td class="block"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                    </tr>
+        
+                    <tr>
+                        <td class="block"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                    </tr>
+        
+                    <tr>
+                        <td class="block"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                    </tr>
+                    <tr>
+                        <td class="block"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                    </tr>
+              </table>
+          </div>
+      </div>
   </section>
 </article>
 
 <script src="build/build.js"></script>
 
 </body>
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script >
+      const btn = document.querySelectorAll("body button");
+
+        btn.forEach(function (pil) {
+            pil.addEventListener('click', function () {
+                let namebtn = pil.getAttribute('name');
+                geserCek(namebtn);
+            });
+        });
+
+        function geserCek(nbtn) {
+            const table = document.querySelectorAll('.' + nbtn);
+            if (table[0].disabled == true) {
+                autoNext(0, nbtn);
+            } else {
+                table[0].select();
+            }
+
+
+            for (let i = 0; i < table.length; i++) {
+                table[i].addEventListener('input', function () {
+                    if (i == table.length - 1) {
+                        var concatString = catString(nbtn);
+                        submitString(concatString, nbtn, table);
+
+
+                    } else if (i == table.length - 2 && table[table.length - 1].disabled == true) {
+                        var concatString = catString(nbtn);
+                        submitString(concatString, nbtn, table);
+
+                    } else {
+                        autoNext(i, nbtn);
+                        var concatString = catString(nbtn);
+                        submitString(concatString, nbtn, table);
+                    }
+
+                });
+
+            }
+        }
+
+        function autoNext(i, cn) {
+            let d = document.querySelectorAll('.' + cn);
+            if (d[i + 1].disabled == true) {
+                d[i + 2].select();
+
+            } else {
+                d[i + 1].select();
+            }
+
+        }
+
+        // concat input to string
+        function catString(cn) {
+            var concat = "";
+            let d = document.querySelectorAll('.' + cn);
+            for (let i = 0; i < d.length; i++) {
+                concat += d[i].value;
+            }
+            return concat;
+        }
+
+        function submitString(concat, tipe, tabel) {
+            if (concat.toUpperCase() == "ABC" && tipe == "d1") {
+                pengulanganTabel(tabel);
+            } else if (concat.toUpperCase() == "BCA" && tipe == "m1") {
+                pengulanganTabel(tabel);
+            } else if (concat.toUpperCase() == "ETNIS" && tipe == "d2") {
+                pengulanganTabel(tabel);
+            } else if (concat.toUpperCase() == "ADERA" && tipe == "d3") {
+                pengulanganTabel(tabel);
+            } else if (concat.toUpperCase() == "TKA" && tipe == "m2") {
+                pengulanganTabel(tabel);
+            } else if (concat.toUpperCase() == "RAM" && tipe == "m3") {
+                pengulanganTabel(tabel);
+            } else if (concat.toUpperCase() == "LAMPUNG" && tipe == "d4") {
+                pengulanganTabel(tabel);
+            } else if (concat.toUpperCase() == "EROPA" && tipe == "m4") {
+                pengulanganTabel(tabel);
+            } else if (concat.toUpperCase() == "NOBEL" && tipe == "m5") {
+                pengulanganTabel(tabel);
+            } else if (concat.toUpperCase() == "LALAB" && tipe == "d5") {
+                pengulanganTabel(tabel);
+            } else if (concat.toUpperCase() == "LAN" && tipe == "m6") {
+                pengulanganTabel(tabel);
+            } else if (concat.toUpperCase() == "AREN" && tipe == "d6") {
+                pengulanganTabel(tabel);
+            } else if (concat.toUpperCase() == "BALI" && tipe == "d7") {
+                pengulanganTabel(tabel);
+            }
+        }
+
+        function pengulanganTabel(table) {
+            for (let j = 0; j < table.length; j++) {
+                table[j].disabled = true;
+            }
+        }
+
+        $(document).ready(function(){
+          $(".nav-tabs a").click(function(){
+            $(this).tab('show');
+          });
+          $(".nav-tabs ab").click(function(){
+            $(this).tab('show');
+          });
+        });
+    </script>
 </html>
+
+
+
+<!-- 
+<section>
+  <h2>Touch Interaction</h2>
+  <h3>Powered by <a href="https://github.com/bespokejs/bespoke-touch">bespoke-touch</a></h3>
+</section>
+
+<section>
+  <h2>Responsive Slides</h2>
+  <h3>Powered by <a href="https://github.com/bespokejs/bespoke-scale">bespoke-scale</a></h3>
+</section>
+
+<section>
+  <h2>Bullet List</h2>
+  <h3>Powered by <a href="https://github.com/bespokejs/bespoke-bullets">bespoke-bullets</a></h3>
+  <ul class="build build-items">
+    <li>Bullet 1</li>
+    <li>Bullet 2</li>
+    <li>Bullet 3</li>
+  </ul>
+</section>
+
+<section>
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/AV3kYPutYfs?rel=0&amp;showinfo=0&amp;controls=0&amp;enablejsapi=1&amp;loop=1&amp;playlist=AV3kYPutYfs" frameborder="0" allowfullscreen data-volume="0"></iframe>
+</section>
+
+<section>
+  <h2>Syntax Highlighting</h2>
+  <h3>Powered by <a href="https://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/PrismJS/prism">Prism</a></h3>
+  <pre><code class="language-javascript">
+(function() {
+function hanoi(n, a, b, c) {
+  return n ? hanoi(n - 1, a, c, b)
+      .concat([[a, b]])
+      .concat(hanoi(n - 1, c, b, a)) : [];
+}
+return hanoi(3, 'left', 'right', 'mid')
+  .map(function(d) {
+    return d[0] + ' -&gt; ' + d[1];
+  });
+})();</code></pre>
+</section>
+
+<section data-bespoke-hash="named-route">
+  <h2>Named Route</h2>
+  <h3>Powered by <a href="https://github.com/bespokejs/bespoke-hash">bespoke-hash</a></h3>
+  <p>Look up! This route has been named with a <em>data-bespoke-hash</em> attribute.</p>
+</section>
+
+<section>
+  <h2>Just the beginning…</h2><br>
+  <ul class="build build-items">
+    <li>Edit HTML markup in <em class="path">src/index.html</em></li>
+    <li>Edit <a href="http://stylus-lang.com">Stylus</a> styles in <em class="path">src/styles/user.styl</em></li>
+    <li>Edit JavaScript in <em class="path">src/scripts/main.js</em></li>
+  </ul>
+  <br>
+  <ul class="build">
+    <li><strong>Enjoy! :)</strong><a href="https://twitter.com/markdalgleish"> -@markdalgleish</a></li>
+  </ul>
+</section> -->
