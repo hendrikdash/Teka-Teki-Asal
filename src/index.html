@@ -574,7 +574,128 @@
                 geserCek(namebtn);
             });
         });
-  </script>
+
+        function geserCek(nbtn) {
+            const table = document.querySelectorAll('.' + nbtn);
+            if (table[0].disabled == true) {
+                autoNext(0, nbtn);
+            } else {
+                table[0].select();
+            }
+
+
+            for (let i = 0; i < table.length; i++) {
+                table[i].addEventListener('input', function () {
+                    if (i == table.length - 1) {
+                        var concatString = catString(nbtn);
+                        submitString(concatString, nbtn, table);
+
+
+                    } else if (i == table.length - 2 && table[table.length - 1].disabled == true) {
+                        var concatString = catString(nbtn);
+                        submitString(concatString, nbtn, table);
+
+                    } else {
+                        autoNext(i, nbtn);
+                        var concatString = catString(nbtn);
+                        submitString(concatString, nbtn, table);
+                    }
+
+                });
+
+            }
+        }
+
+        function autoNext(i, cn) {
+            let d = document.querySelectorAll('.' + cn);
+            if (d[i + 1].disabled == true) {
+                d[i + 2].select();
+
+            } else {
+                d[i + 1].select();
+            }
+
+        }
+
+        // concat input to string
+        function catString(cn) {
+            var concat = "";
+            let d = document.querySelectorAll('.' + cn);
+            for (let i = 0; i < d.length; i++) {
+                concat += d[i].value;
+            }
+            return concat;
+        }
+        let countss = 0;
+        function submitString(concat, tipe, tabel) {
+            if (concat.toUpperCase() == "APASAJA" && tipe == "d1t1") {
+                pengulanganTabel(tabel);
+                $('.'+tipe).css('background','lime')
+            } else if (concat.toUpperCase() == "SALAH" && tipe == "d2t1") {
+                pengulanganTabel(tabel);
+                $('.'+tipe).css('background','lime')
+            } else if (concat.toUpperCase() == "BADMOOD" && tipe == "d3t3") {
+                pengulanganTabel(tabel);
+                $('.'+tipe).css('background','lime')
+            } else if (concat.toUpperCase() == "MISAH" && tipe == "m1t1") {
+                pengulanganTabel(tabel);
+                $('.'+tipe).css('background','lime')
+            } else if (concat.toUpperCase() == "PRKIMIA" && tipe == "m2t1") {
+                pengulanganTabel(tabel);
+                $('.'+tipe).css('background','lime')
+            } else if (concat.toUpperCase() == "GANYARI" && tipe == "m3t1") {
+                pengulanganTabel(tabel);
+                $('.'+tipe).css('background','lime')
+            } else if (concat.toUpperCase() == "KURANG" && tipe == "d1t2") {
+                pengulanganTabel(tabel);
+                $('.'+tipe).css('background','lime')
+            } else if (concat.toUpperCase() == "PINGGIR" && tipe == "d2t2") {
+                pengulanganTabel(tabel);
+                $('.'+tipe).css('background','lime')
+            } else if (concat.toUpperCase() == "MAINFILM" && tipe == "d3t2") {
+                pengulanganTabel(tabel);
+                $('.'+tipe).css('background','lime')
+            } else if (concat.toUpperCase() == "PINTU" && tipe == "m1t2") {
+                pengulanganTabel(tabel);
+                $('.'+tipe).css('background','lime')
+            } else if (concat.toUpperCase() == "BAIKBAIK" && tipe == "m2t2") {
+                pengulanganTabel(tabel);
+                $('.'+tipe).css('background','lime')
+            } else if (concat.toUpperCase() == "NANCEP" && tipe == "m3t2") {
+                pengulanganTabel(tabel);
+                $('.'+tipe).css('background','lime')
+            } else if (concat.toUpperCase() == "MANGKOK" && tipe == "m4t2") {
+                pengulanganTabel(tabel);
+                $('.'+tipe).css('background','lime')
+            } 
+        }
+
+        function randomIntFromInterval(min, max) { // min and max included 
+          return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        function pengulanganTabel(table) {
+            for (let j = 0; j < table.length; j++) {
+                table[j].disabled = true;
+            }
+        }
+        function randomAudio() {
+          const random = randomIntFromInterval(0,2);
+          const arr = ['mp1.mp3','mp2.mp3','mp3.mp3'];
+          var audio = new Audio(arr[random]);
+          audio.play();
+        }
+        randomAudio();
+        $(document).ready(function(){
+          $(".nav-tabs a").click(function(){
+            $(this).tab('show');
+          });
+          $(".nav-tabs ab").click(function(){
+            $(this).tab('show');
+          });
+        });
+        
+    </script>
 </html>
 
 
