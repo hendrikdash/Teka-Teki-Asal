@@ -23,13 +23,13 @@
       }
 
       td {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
       }
 
       td input {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         text-align: center;
         font-size: 14px;
         text-transform: uppercase;
@@ -61,7 +61,7 @@
           box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
       }
       .title {
-        color: #CCC
+        color: white
       }
       .paragraph {
       font-family: 'Times New Roman', Times, serif;
@@ -72,6 +72,20 @@
     .pr-2 {
       font-size: small;
     }
+    .backgroundImage {
+        background-image:
+        linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+        url('images/first.jpg');
+        background-size: cover;
+      }
+      .divk {
+        color: white;
+      }
+      .tabel{
+        margin-top: "20px";
+        float: right;
+      }
+      
   </style>
 </head>
 
@@ -84,7 +98,7 @@
     <img src="images/bespoke-logo.jpg">
   </section> -->
 
-  <section style="background-image : url('images/first.jpg');">
+  <section class="backgroundImage">
     <h2 class="title">Teka - Teki Asal</h2>
     <h3 class="title">Kelompok  :</h3>
     <div style="width: 300px; margin-left: 100px;">
@@ -95,7 +109,7 @@
     </div>
   </section>
 
-  <section style="background-image : url('images/first.jpg');">
+  <section class="backgroundImage">
     <h2 class="title">Cara Bermain</h2>
     <div style="width: 300px; margin-left: 100px;">
       <p class="paragraph">1. Perhatikan dengan cermat nomor soalnya, menurun atau mendatar. Karena jika salah, teka teki silang tidak akan terjawab dengan sempurna.</p>
@@ -106,15 +120,15 @@
   </section>
 
   
-  <section class="bespoke-slide_1">
-      <div class="row">
+  <section class="bespoke-slide_1 backgroundImage">
+      <div class="row" style="padding: 10px;" >
           
-          <div class="col" >
+          <div class="col-4" style="height: 420px;">
               <h5 class="title">Tahap Satu</h5>
               <div class="container">
                   <ul class="nav nav-tabs">
-                    <li class="active"><a href="#mendatar" style="margin: 10px;">Datar</a></li>
-                    <li><a href="#menurun" style="margin: 10px;">Turun</a></li>
+                    <li class="active"><a href="#mendatar" style="margin: 10px; color: white;">Datar</a></li>
+                    <li><a href="#menurun" style="margin: 10px; color: white;">Turun</a></li>
                   </ul>
                 
                   <div class="tab-content">
@@ -180,7 +194,7 @@
                   </div>
                 </div>   
           </div>
-          <div class="col-8" style="height: auto;">
+          <div class="col-8" style="height: auto; margin-top: 30px;">
               <table class="tabel">
                   <tr>
                       <td class="block"></td>
@@ -309,14 +323,14 @@
     
   </section>
 
-  <section class="bespoke-slide_2" >
-      <div class="row" >
-          <div class="col" >
+  <section class="bespoke-slide_2 backgroundImage" >
+      <div class="row" style="padding: 10px;" >
+          <div class="col-4"  style="height: 420px;">
               <h5 class="title">Tahap dua</h5>
               <div class="container">
                   <ul class="nav nav-tabs">
-                    <li class="active"><a href="#mendatar2" style="margin: 10px;">Datar</a></li>
-                    <li><a href="#menurun2" style="margin: 10px;">Turun</a></li>
+                    <li class="active"><a href="#mendatar2" style="margin: 10px; color: white;">Datar</a></li>
+                    <li><a href="#menurun2" style="margin: 10px; color: white;">Turun</a></li>
                   </ul>
                 
                   <div class="tab-content">
@@ -325,7 +339,7 @@
                         
                         <li>
                           <div class="divk pr-2" name="d1t2">
-                              Orang-orang yang bekerja di bidang musik seperti yovie, armand, glennm mereka semua namanya ...
+                              Orang-orang yang bekerja di bidang musik seperti yovie, armand, glenn mereka semua namanya ...
                           </div>
                           <div class="pr-2"><button type="button" name="d1t2"
                               class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
@@ -391,11 +405,9 @@
                   </div>
                 </div>   
           </div>
-          <div class="col-8" style="height: auto;">
+          <div class="col-8" style="height: auto; margin-top: 30px;">
               <table class="tabel">
-
                   <tr>
-                      
                       <td class="block"></td>
                       <td class="block"></td>
                       <td class="block"></td>
@@ -555,6 +567,9 @@
               </table>
           </div>
       </div>
+  </section>
+  <section class="backgroundImage">
+    <h2 class="title">Sekian, Terima Kasih</h2>
   </section>
 </article>
 
