@@ -16,6 +16,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
  <style>
       table {
@@ -23,13 +24,13 @@
       }
 
       td {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
       }
 
       td input {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         text-align: center;
         font-size: 14px;
         text-transform: uppercase;
@@ -51,7 +52,7 @@
           vertical-align:middle;
           max-width: 100%;
           text-align: center;
-          border-radius: 25px;
+        
           padding-left: 10px;
           padding-right: 10px;
           size: 12px;
@@ -65,16 +66,16 @@
       }
       .paragraph {
       font-family: 'Times New Roman', Times, serif;
-      font-size: large;
+      font-size: 25px;
       color: white;
       line-height: 1;
     }
     .pr-2 {
-      font-size: small;
+      font-size: large;
     }
     .backgroundImage {
         background-image:
-        linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+        linear-gradient(to bottom, rgba(9, 38, 202, 0.52), rgba(73, 3, 56, 0.73)),
         url('images/first.jpg');
         background-size: cover;
       }
@@ -85,7 +86,19 @@
         margin-top: "20px";
         float: right;
       }
-      
+      .button5 {border-radius: 50%;}
+      .buttond {
+        background-color: rgb(24, 206, 94); /* Green */
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
   </style>
 </head>
 
@@ -101,7 +114,7 @@
   <section class="backgroundImage">
     <h2 class="title">Teka - Teki Asal</h2>
     <h3 class="title">Kelompok  :</h3>
-    <div style="width: 300px; margin-left: 100px;">
+    <div style="width: 500px; margin-left: 250px;">
       <p class="paragraph">1. Ivan Audris (161110382)</p>
       <p class="paragraph">2. Wanjemy Jaya (161110668)</p>
       <p class="paragraph">3. Fellia Eda Faustine  (161110617)</p>
@@ -112,458 +125,459 @@
   <section class="backgroundImage">
     <h2 class="title">Cara Bermain</h2>
     <div style="width: 300px; margin-left: 100px;">
-      <p class="paragraph">1. Perhatikan dengan cermat nomor soalnya, menurun atau mendatar. Karena jika salah, teka teki silang tidak akan terjawab dengan sempurna.</p>
-      <p class="paragraph">2. Jika sudah dapat pertanyaannya, cari kolom jawabannya. Kalau menurun, pengisiannya ke bawah. Kalau mendatar, pengisiannya ke samping (kanan)</p>
-      <p class="paragraph">3. Permainan terdiri dari 2 tahap</p>
-      <p class="paragraph">4. Dilarang Mengenggam Gawai/Handphone Smartphone menggunakan tangan</p>
+      <p class="paragraph ">1. Perhatikan dengan cermat nomor soalnya, menurun atau mendatar. Karena jika salah, teka teki silang tidak akan terjawab dengan sempurna.</p>
+      <p class="paragraph ">2. Jika sudah dapat pertanyaannya, tekan tombol panah untuk mengarahkan ke kolom dan tombol x untuk menhapus kolom. Kalau menurun, pengisiannya ke bawah. Kalau mendatar, pengisiannya ke samping (kanan)</p>
+      <p class="paragraph ">3. Dilarang Mengenggam Gawai/Handphone Smartphone sewaktu bermain</p>
     </div>
   </section>
 
-  
-  <section class="bespoke-slide_1 backgroundImage">
+
+  <section class="bespoke-slide backgroundImage" >
       <div class="row" style="padding: 10px;" >
-          
-          <div class="col-4" style="height: 420px;">
-              <h5 class="title">Tahap Satu</h5>
-              <div class="container">
-                  <ul class="nav nav-tabs">
-                    <li class="active"><a href="#mendatar" style="margin: 10px; color: white;">Datar</a></li>
-                    <li><a href="#menurun" style="margin: 10px; color: white;">Turun</a></li>
-                  </ul>
+          <div class="col">
+            <div id="testgif"></div>
+            <div style="width: 400px; height: 650px;">
+                <h5 class="title">Yuk Kamu Pasti Bisa</h5>
                 
-                  <div class="tab-content">
-                    <div id="mendatar" class="tab-pane fade in active" >
-                      <ul>
-                        <li>
-                          <div class="divk pr-2" name="d1t1">
-                              Serigala muncul saat bulan...
-                          </div>
-                          <div class="pr-2"><button type="button" name="d1t1"
-                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="divk pr-2" name="d2t1">
-                              Bahasa inggrisnya meja adalah 
-                          </div>
-                          <div class="pr-2"><button type="button" name="d2t1"
-                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
-                          </div>
-                        </li>
-                        <!-- <li>
-                          <div class="divk pr-2" name="d3t1">
-                            Tidak merasa enak ?
-                          </div>
-                          <div class="pr-2"><button type="button" name="d3t1"
-                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
-                          </div>
-                        </li> -->
-                       
-                      </ul>  
-                      
-
-                    </div>
-                    <div id="menurun" class="tab-pane fade">
-                      <ul>
-                        <li>
-                          <div class="divk pr-2" name="m1t1">
-                            Kota yang ada di sumatra ? 
-                          </div>
-                          <div class="pr-2"><button type="button" name="m1t1"
-                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="divk pr-2" name="m2t1">
-                            Masalah?
-                          </div>
-                          <div class="pr-2"><button type="button" name="m2t1"
-                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="divk pr-2" name="m3t1">
-                            Astrounot pergi keluar ?
-                          </div>
-                          <div class="pr-2"><button type="button" name="m3t1"
-                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
-                          </div>
-                        </li>
-                      </ul> 
-                    </div>
-                  </div>
-                </div>   
-          </div>
-          <div class="col-8" style="height: auto; margin-top: 30px;">
-              <table class="tabel">
-                  <tr>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"><input class="m3t1" type="text" maxlength="1"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                  </tr>
-                  <tr>
-                      
-                      <td class="block"><input class="d1t1" type="text" maxlength="1"></td>
-                      <td class="block"><input class="d1t1 m2t1" type="text" maxlength="1"></td>
-                      <td class="block"><input class="d1t1" type="text" maxlength="1"></td>
-                      <td class="block"><input class="d1t1" type="text" maxlength="1"></td>
-                      <td class="block"><input class="d1t1 m3t1" type="text" maxlength="1"></td>
-                      <td class="block"><input class="d1t1" type="text" maxlength="1"></td>
-                      <td class="block"><input class="d1t1" id="final" type="text" maxlength="1"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                  </tr>
-
-                  <tr>
-                      
-                      <td class="block"></td>
-                      <td class="block"><input class="m2t1" type="text" maxlength="1"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"><input class="m3t1" type="text" maxlength="1"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                  </tr>
-                 
-                  <tr>
-                      
-                      <td class="block"></td>
-                      <td class="block"><input class="m2t1" type="text" maxlength="1"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"><input class="m3t1" type="text" maxlength="1"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                  </tr>
-
-                  <tr>
-                      
-                      <td class="block"></td>
-                      <td class="block"><input class="m2t1" type="text" maxlength="1"></td>
-                      <td class="block"></td>
-                      <td class="block"><input class="dd" type="text" maxlength="1" value="B" disabled></td>
-                      <td class="block"><input class="dd m3t1" type="text" maxlength="1" value="A" disabled></td>
-                      <td class="block"><input class="dd" type="text" maxlength="1" value="D" disabled></td>
-                      <td class="block"><input class="dd m1t1" type="text" maxlength="1" value="M" disabled></td>
-                      <td class="block"><input class="dd" type="text" maxlength="1" value="O" disabled></td>
-                      <td class="block"><input class="dd" type="text" maxlength="1" value="O" disabled></td>
-                      <td class="block"><input class="dd" type="text" maxlength="1" value="D" disabled></td>
-                  </tr>
-        
-                    <tr>
-                        <td class="block"></td>
-                        <td class="block"><input class="m2t1" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m3t1" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m1t1" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                    </tr>
-        
-                     <tr>
-                        <td class="block"></td>
-                        <td class="block"><input class="m2t1" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m3t1" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m1t1" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                    </tr>
-        
-                    <tr>
-                        <td class="block"></td>
-                        <td class="block"><input class="m2t1" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="d2t1" type="text" maxlength="1"></td>
-                        <td class="block"><input class="d2t1 m1t1" type="text" maxlength="1"></td>
-                        <td class="block"><input class="d2t1" type="text" maxlength="1"></td>
-                        <td class="block"><input class="d2t1" type="text" maxlength="1"></td>
-                        <td class="block"><input class="d2t1" type="text" maxlength="1"></td>
-                    </tr>
-        
-                    <tr>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m1t1" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                    </tr>
-        
-                  
-              </table>
-          </div>
-      </div>
-    
-  </section>
-
-  <section class="bespoke-slide_2 backgroundImage" >
-      <div class="row" style="padding: 10px;" >
-          <div class="col-4"  style="height: 420px;">
-              <h5 class="title">Tahap dua</h5>
-              <div class="container">
-                  <ul class="nav nav-tabs">
-                    <li class="active"><a href="#mendatar2" style="margin: 10px; color: white;">Datar</a></li>
-                    <li><a href="#menurun2" style="margin: 10px; color: white;">Turun</a></li>
-                  </ul>
-                
-                  <div class="tab-content">
-                    <div id="mendatar2" class="tab-pane fade in active" >
-                      <ul>
-                        
-                        <li>
-                          <div class="divk pr-2" name="d1t2">
-                              Orang-orang yang bekerja di bidang musik seperti yovie, armand, glenn mereka semua namanya ...
-                          </div>
-                          <div class="pr-2"><button type="button" name="d1t2"
-                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="divk pr-2" name="d2t2">
-                            Ibu kota thailand berada di ?
-                          </div>
-                          <div class="pr-2"><button type="button" name="d2t2"
-                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
-                          </div>
-                        </li>
-                        <li>
-                            <div class="divk pr-2" name="d3t2">
-                              Yang berperan sebagai wonder women di layar lebar namanya ?
-                            </div>
-                            <div class="pr-2"><button type="button" name="d3t2"
-                                class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
-                            </div>
-                        </li>
+                <div class="container">
                     
-                      </ul>  
-                      
-
-                    </div>
-                    <div id="menurun2" class="tab-pane fade">
-                      <ul>
-                        <li>
-                          <div class="divk pr-2" name="m1t2">
-                           Yang menjaga narapidana agar tidak kabur adalah?
-                          </div>
-                          <div class="pr-2"><button type="button" name="m1t2"
-                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
-                          </div>
-                        </li>
-                        <li>
-                            <div class="divk pr-2" name="m2t2">Selain melalui pemungutan Suara, keputusan bisa diambil dengan cara
-                                
+                    <ul class="nav nav-tabs">
+                      <li class="active"><a href="#mendatar2" style="margin: 10px; color: white;">Mendatar</a></li>
+                      <li><a href="#menurun2" style="margin: 10px; color: white;">Menurun</a></li>
+                    </ul>
+                  
+                    <div class="tab-content">
+                      <div id="mendatar2" class="tab-pane fade in active" >
+                          <ol  class="divk pr-2">
+                          <li>
+                            <div class="divk pr-2" name="d1">
+                                Yang ditarik sebelum kapal laut berangkat ...
                             </div>
-                            <div class="pr-2"><button type="button" name="m2t2"
-                                class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="pr-2"><button type="button" name="d1"
+                                      class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                  </div>
+                                  <div class="pr-2"><button type="button" onclick="detectField('d1')"
+                                    class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                                </div>
+                                </div>
+                              </div>
+                            
+                          </li>
+                          <li>
+                            <div class="divk pr-2" name="d2">
+                                Orang batuk, dilarang minum...
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                <div class="pr-2"><button type="button" name="d2"
+                                    class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                </div>
+                                <div class="pr-2"><button type="button" onclick="detectField('d2')"
+                                  class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                              </div>
+                              </div>
                             </div>
                           </li>
-                        <li>
-                          <div class="divk pr-2" name="m3t2">
-                          Tumbuhan yang hidup di padang pasir?
+                          <li>
+                              <div class="divk pr-2" name="d3">
+                                  Anda tahu katak, anaknya disebut ?
+                              </div>
+                              <div class="container">
+                                  <div class="row">
+                                    <div class="pr-2"><button type="button" name="d3"
+                                        class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                    </div>
+                                    <div class="pr-2"><button type="button" onclick="detectField('d3')"
+                                      class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                                  </div>
+                                </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="divk pr-2" name="d4">
+                                  Burung bisa terbang karena memiliki ?
+                              </div>
+                              <div class="container">
+                                  <div class="row">
+                                    <div class="pr-2"><button type="button" name="d4"
+                                        class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                    </div>
+                                    <div class="pr-2"><button type="button" onclick="detectField('d4')"
+                                      class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                                  </div>
+                                </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="divk pr-2" name="d5">
+                                orang yang suka berfoto-foto di luar negeri, mereka suka?
+                              </div>
+                              <div class="container">
+                                  <div class="row">
+                                  <div class="pr-2"><button type="button" name="d5"
+                                      class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                  </div>
+                                  <div class="pr-2"><button type="button" onclick="detectField('d5')"
+                                    class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                              <div class="divk pr-2" name="d6">
+                                  Yang dibeli seorang cowok untuk pasangannya di saat valentine biasanya...
+                              </div>
+                              <div class="container">
+                                  <div class="row">
+                                  <div class="pr-2"><button type="button" name="d6"
+                                      class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                  </div>
+                                  <div class="pr-2"><button type="button" onclick="detectField('d6')"
+                                    class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                              <div class="divk pr-2" name="d7">
+                                sering dimarahin bos karena ...
+                              </div>
+                              <div class="container">
+                                  <div class="row">
+                                    <div class="pr-2"><button type="button" name="d7"
+                                        class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                    </div>
+                                    <div class="pr-2"><button type="button" onclick="detectField('d7')"
+                                      class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                                  </div>
+                                </div>
+                              </div>
+                          </li>
+                      
+                          <ol>
+                        
+  
+                      </div>
+                      <div id="menurun2" class="tab-pane fade">
+                          <ol  class="divk pr-2">
+                          <li>
+                            <div class="divk pr-2" name="m1">
+                                Halaman kosong bisa dijadikan tempat...
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                <div class="pr-2"><button type="button" name="m1"
+                                    class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                </div>
+                                <div class="pr-2"><button type="button" onclick="detectField('m1')"
+                                  class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                              </div>
+                            </div>
                           </div>
-                          <div class="pr-2"><button type="button" name="m3t2"
-                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                          </li>
+                          <li>
+                              <div class="divk pr-2" name="m2">
+                                Hewan tercepat pasti menggunakan ...
+                                  
+                              </div>
+                              <div class="container">
+                                  <div class="row">
+                                  <div class="pr-2"><button type="button" name="m2"
+                                      class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                  </div>
+                                  <div class="pr-2"><button type="button" onclick="detectField('m2')"
+                                    class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                                </div>
+                              </div>
+                            </div>
+                            </li>
+                          <li>
+                            <div class="divk pr-2" name="m3">
+                                Supaya mengkilat, sepatu kulit harus di...
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                <div class="pr-2"><button type="button" name="m3"
+                                    class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                </div>
+                                <div class="pr-2"><button type="button" onclick="detectField('m3')"
+                                  class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                              </div>
+                            </div>
                           </div>
-                        </li>
-                        <li>
-                          <div class="divk pr-2" name="m4t2">
-                            Soto betawi yang paling enak ada di?
+                          </li>
+                          <li>
+                            <div class="divk pr-2" name="m4">
+                                Yang tugasnya mengirim barang, pasti ...
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                <div class="pr-2"><button type="button" name="m4"
+                                    class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                </div>
+                                <div class="pr-2"><button type="button" onclick="detectField('m4')"
+                                  class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                              </div>
+                            </div>
                           </div>
-                          <div class="pr-2"><button type="button" name="m4t2"
-                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
-                          </div>
-                        </li>
-                      </ul> 
+                          </li>
+                          <li>
+                              <div class="divk pr-2" name="m5">
+                                  Untuk melanjutkan tugas kedua, maka tugas kesatu harus ...
+                              </div>
+                              <div class="container">
+                                  <div class="row">
+                                  <div class="pr-2"><button type="button" name="m5"
+                                      class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                  </div>
+                                  <div class="pr-2"><button type="button" onclick="detectField('m5')"
+                                    class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                                </div>
+                              </div>
+                            </div>
+                            </li>
+                            <li>
+                                <div class="divk pr-2" name="m6">
+                                    sesuatu yang dikatakan malu dan hati berdegup cepat, namanya ...
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                    <div class="pr-2"><button type="button" name="m6"
+                                        class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                    </div>
+                                    <div class="pr-2"><button type="button" onclick="detectField('m6')"
+                                      class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                                  </div>
+                                </div>
+                              </div>
+                              </li>
+                              <li>
+                                  <div class="divk pr-2" name="m7">
+                                      Kita tidak bisa menelepon, kalau handphonenya ngga ada...
+                                  </div>
+                                  <div class="container">
+                                      <div class="row">
+                                  <div class="pr-2"><button type="button" name="m7"
+                                      class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                  </div>
+                                  <div class="pr-2"><button type="button" onclick="detectField('m7')"
+                                    class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                                </div>
+                              </div>
+                            </div>
+                                </li>
+                        </ol> 
+                      </div>
                     </div>
-                  </div>
-                </div>   
+                  </div>   
+            </div>
+              
           </div>
-          <div class="col-8" style="height: auto; margin-top: 30px;">
+          <div class="col" >
+              <button type="button" class="buttond button5" data-toggle="modal" data-target="#exampleModalCenter">Bantuan</button>
               <table class="tabel">
-                  <tr>
+                  <tr class="rowTable">
                       <td class="block"></td>
                       <td class="block"></td>
                       <td class="block"></td>
-                      <td class="block"><input class="m2t2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="m1" id="testfocus" type="text" maxlength="1"></td>
                       <td class="block"></td>
                       <td class="block"></td>
                       <td class="block"></td>
-                      <td class="block"><input class="m1t2" type="text" maxlength="1"></td>
-                      <td class="block"></td>
+                      <td class="block"><input class="m2" type="text" maxlength="1"></td>
                       <td class="block"></td>
                       <td class="block"></td>
                       <td class="block"></td>
                       <td class="block"></td>
                   </tr>
-                  <tr>
+                  <tr class="rowTable">
                       <td class="block"></td>
                       <td class="block"></td>
-                      <td class="block"><input class="d3t2" type="text" maxlength="1"></td>
-                      <td class="block"><input class="d3t2 m2t2" type="text" maxlength="1"></td>
-                      <td class="block"><input class="d3t2" type="text" maxlength="1"></td>
-                      <td class="block"><input class="d3t2" type="text" maxlength="1"></td>
-                      <td class="block"><input class="d3t2" type="text" maxlength="1"></td>
-                      <td class="block"><input class="d3t2 m1t2" type="text" maxlength="1"></td>
-                      <td class="block"><input class="d3t2" type="text" maxlength="1"></td>
-                      <td class="block"><input class="d3t2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="d1" type="text" maxlength="1" ></td>
+                      <td class="block"><input class="d1 m1" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d1" type="text" maxlength="1" ></td>
+                      <td class="block"><input class="d1" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d1" type="text" maxlength="1" ></td>
+                      <td class="block"><input class="d1 m2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d1" type="text" maxlength="1" ></td>
                       <td class="block"></td>
                       <td class="block"></td>
                       <td class="block"></td>
                   </tr>
 
-                  <tr>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"><input class="m2t2" type="text" maxlength="1"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"><input class="m1t2" type="text" maxlength="1"></td>
+                  <tr class="rowTable">
                       <td class="block"></td>
                       <td class="block"></td>
                       <td class="block"></td>
                       <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="m1" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="m2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="m3" type="text" maxlength="1"></td>
                       <td class="block"></td>
                   </tr>
                  
-                  <tr>
+                  <tr class="rowTable">
                       <td class="block"></td>
                       <td class="block"></td>
                       <td class="block"></td>
-                      <td class="block"><input class="m2t2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="d2 m1" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2 m2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="d2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="m3" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                  </tr>
+
+                  <tr class="rowTable">
+                      <td class="block"></td>
+                      <td class="block"><input class="m4" type="text" maxlength="1"></td>
                       <td class="block"></td>
                       <td class="block"></td>
                       <td class="block"></td>
-                      <td class="block"><input class="m1t2" type="text" maxlength="1"></td>
+                      <td class="block"><input class="m1" type="text" maxlength="1"></td>
                       <td class="block"></td>
-                      <td class="block"><input class="m4t2" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="m3" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                  </tr>
+        
+                    <tr class="rowTable">
+                        <td class="block"><input class="d3" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d3 m4" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d3" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d3 m5" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d3" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d3 m1" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d3" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d3 m6" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="d4" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d4 m7" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d4" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d4 m3" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d4" type="text" maxlength="1"></td>
+                    </tr>
+        
+                     <tr class="rowTable">
+                        <td class="block"></td>
+                        <td class="block"><input class="m4" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="m5" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="m6" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="m7" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="m3" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                    </tr>
+        
+                    <tr class="rowTable">
+                        <td class="block"></td>
+                        <td class="block"><input class="d5 m4" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d5" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d5 m5" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d5" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d5" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d5" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d5 m6" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d5" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d5" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d5 m7" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                    </tr>
+        
+                    <tr class="rowTable">
+                        <td class="block"></td>
+                        <td class="block"><input class="m4" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="m5" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="m7" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                    </tr>
+                    <tr class="rowTable">
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="m5" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="d6" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d6 m7" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d6" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d6" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d6" type="text" maxlength="1"></td>
+                    </tr>
+                    <tr class="rowTable">
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"><input class="d7 m5" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d7" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d7" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d7" type="text" maxlength="1"></td>
+                        <td class="block"><input class="d7" type="text" maxlength="1"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                        <td class="block"></td>
+                  </tr>
+                  <tr class="rowTable">
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"><input class="m5" type="text" maxlength="1"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
+                      <td class="block"></td>
                       <td class="block"></td>
                       <td class="block"></td>
                       <td class="block"></td>
                   </tr>
 
-                  <tr>
-                      <td class="block"></td>
-                      <td class="block"><input class="m3t2" type="text" maxlength="1"></td>
-                      <td class="block"></td>
-                      <td class="block"><input class="m2t2" type="text" maxlength="1"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"><input class="d1t2" type="text" maxlength="1"></td>
-                      <td class="block"><input class="d1t2 m1t2" type="text" maxlength="1"></td>
-                      <td class="block"><input class="d1t2" type="text" maxlength="1"></td>
-                      <td class="block"><input class="d1t2 m4t2" type="text" maxlength="1"></td>
-                      <td class="block"><input class="d1t2" type="text" maxlength="1"></td>
-                      <td class="block"><input class="d1t2" type="text" maxlength="1"></td>
-                      <td class="block"></td>
-                  </tr>
-        
-                    <tr>
-                      <td class="block"><input class="dd" type="text" maxlength="1" value="N" disabled></td>
-                      <td class="block"><input class="dd m3t2" type="text" maxlength="1" value="A" disabled></td>
-                      <td class="block"><input class="dd" type="text" maxlength="1" value="K" disabled></td>
-                      <td class="block"><input class="dd m2t2" type="text" maxlength="1" value="A" disabled></td>
-                      <td class="block"><input class="dd" type="text" maxlength="1" value="L" disabled></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"><input class="m4t2" type="text" maxlength="1"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                      <td class="block"></td>
-                    </tr>
-        
-                     <tr>
-                        <td class="block"></td>
-                        <td class="block"><input class="m3t2" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m2t2" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="d2t2" type="text" maxlength="1"></td>
-                        <td class="block"><input class="d2t2" type="text" maxlength="1"></td>
-                        <td class="block"><input class="d2t2" type="text" maxlength="1"></td>
-                        <td class="block"><input class="d2t2 m4t2" type="text" maxlength="1"></td>
-                        <td class="block"><input class="d2t2" type="text" maxlength="1"></td>
-                        <td class="block"><input class="d2t2" type="text" maxlength="1"></td>
-                        <td class="block"><input class="d2t2" type="text" maxlength="1"></td>
-                    </tr>
-        
-                    <tr>
-                        <td class="block"></td>
-                        <td class="block"><input class="m3t2" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m2t2" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m4t2" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                    </tr>
-        
-                    <tr>
-                        <td class="block"></td>
-                        <td class="block"><input class="m3t2" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m4t2" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                    </tr>
-                    <tr>
-                        <td class="block"></td>
-                        <td class="block"><input class="m3t2" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m4t2" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                    </tr>
               </table>
           </div>
       </div>
@@ -573,6 +587,75 @@
   </section>
 </article>
 
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Pilih Jawaban</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action" id="d1">
+                    Yang ditarik sebelum kapal laut berangkat ...
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="d2">
+                    Orang batuk, dilarang minum...
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="d3">
+                    Anda tahu katak, anaknya disebut ?
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="d4">
+                    Burung bisa terbang karena memiliki ?
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="d5">
+                    orang yang suka berfoto-foto di luar negeri, mereka suka?
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="d6">
+                    Yang dibeli seorang cowok untuk pasangannya di saat valentine biasanya...
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="d7">
+                    sering dimarahin bos karena ...
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="m1">
+                    Halaman kosong bisa dijadikan tempat...
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="m2">
+                    Hewan tercepat pasti menggunakan ...
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="m3">
+                    Supaya mengkilat, sepatu kulit harus di...
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="m4">
+                    Yang tugasnya mengirim barang, pasti ...
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="m5">
+                    Untuk melanjutkan tugas kedua, maka tugas kesatu harus ...
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="m6">
+                    sesuatu yang dikatakan malu dan hati berdegup cepat, namanya ...
+                </button>
+                <button type="button" class="list-group-item list-group-item-action" id="m7">
+                    Kita tidak bisa menelepon, kalau handphonenya ngga ada...
+                </button>
+            </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+          </div>
+        </div>
+      </div>
+    </div>
 <script src="build/build.js"></script>
 
 </body>
@@ -583,6 +666,9 @@
     <script >
       const btn = document.querySelectorAll("body button");
       // static let counts = 0;
+      let fieldLenght = 0;
+      let opentoggle = false;
+      let nameField = '';
         btn.forEach(function (pil) {
             pil.addEventListener('click', function () {
                 let namebtn = pil.getAttribute('name');
@@ -590,6 +676,116 @@
             });
         });
 
+        function randomIntFromInterval(min, max) { 
+          return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+        function tampilkanGifSalah(){
+          let arr = ['salah_1.gif','salah_2.gif','salah_3.gif','salah_4.gif','salah_5.gif','nangisbanget.gif','sedih.gif'];
+          $('#exampleModal1').modal('show');
+          $('#exampleModal1').on('shown.bs.modal', function() {
+          $("#imageGif").remove();
+          $('#exampleModal1').find('.modal-body').append('<img id="imageGif" style="width : 470px;" src="images/'+arr[randomIntFromInterval(0,6)]+'"/>');
+        });
+        }
+        function tampilkanGifBenar(){
+          let arr = ['hebat.gif','benar_1.gif'];
+          $('#exampleModal1').modal('show');
+          $('#exampleModal1').on('shown.bs.modal', function() {
+          $("#imageGif").remove();
+          $('#exampleModal1').find('.modal-body').append('<img id="imageGif" style="width : 470px;" src="images/'+arr[randomIntFromInterval(0,1)]+'"/>');
+        });
+        }
+
+        
+        $('#exampleModalCenter').on('hidden.bs.modal', function () {
+          if(opentoggle){
+            tampilkanGifSalah();
+          }
+          opentoggle = false;
+        });
+        function isijawaban (name,jawab){
+          var els=document.getElementsByClassName(name);
+          var numItems = $('.'+name).length
+          let arrjwb = jawab.split("");
+          for (let i = 0; i < numItems; i++) {
+            els[i].value = arrjwb[i];
+            els[i].disabled = true;
+            $('.'+name).css('background','lime')
+          }
+          opentoggle = true;
+        }
+        $('button.list-group-item').click(function() {
+          var id = $(this).attr('id');
+            switch (id) {
+                case 'd1':
+                  isijawaban(id,"BAYARAN")
+                  break;
+                case 'd2':
+                isijawaban(id,"BENSIN")
+                  break;
+                case 'd3':
+                isijawaban(id,"KELUARGA")
+                  break;
+                case 'd4':
+                isijawaban(id,"BAKAT")
+                  break;
+                case 'd5':
+                isijawaban(id,"GIATNABUNG")
+                  break;
+                case 'd6':
+                isijawaban(id,"BAYAR")
+                  break;
+                case 'd7':
+                isijawaban(id,"LEMAS")
+                  break;
+                case 'm1':
+                isijawaban(id,"GAMBAR")
+                  break;
+                case 'm2':
+                isijawaban(id,"LARI")
+                  break;
+                case 'm3':
+                isijawaban(id,"SIRAM")
+                  break;
+                case 'm4':
+                isijawaban(id,"PERGI")
+                  break;
+                case 'm5':
+                isijawaban(id,"UDADULU")
+                  break;
+                case 'm6':
+                isijawaban(id,"AIB")
+                  break;
+                case 'm7':
+                isijawaban(id,"ANGKA")
+                  break;
+                default:
+                  break;
+            }
+        });
+        function detectField(name) {
+          var els=document.getElementsByClassName(name);
+          var numItems = $('.'+name).length
+          for (let i = 0; i < numItems; i++) {
+            //if(els[i].css)
+            // console.log(els[i].style.background,'test')
+            els[i].value = "";
+            els[i].disabled = false;
+            $('.'+name).css('background','white')
+          }
+        }
+        function detectWrong(name) {
+          var els=document.getElementsByClassName(name);
+          var numItems = $('.'+name).length
+          for (let i = 0; i < numItems; i++) {
+           
+            if(els[i].style.background === 'lime'){
+              console.log(els[i].style.background, 'test')
+            }
+            $('.'+name).css('background','red')
+          }
+        }
+        let indexGlobal = 0;
         function geserCek(nbtn) {
             const table = document.querySelectorAll('.' + nbtn);
             if (table[0].disabled == true) {
@@ -597,27 +793,20 @@
             } else {
                 table[0].select();
             }
-
-
             for (let i = 0; i < table.length; i++) {
-                table[i].addEventListener('input', function () {
+                table[i].addEventListener('input', function (E) {
                     if (i == table.length - 1) {
                         var concatString = catString(nbtn);
                         submitString(concatString, nbtn, table);
-
-
                     } else if (i == table.length - 2 && table[table.length - 1].disabled == true) {
                         var concatString = catString(nbtn);
                         submitString(concatString, nbtn, table);
-
                     } else {
                         autoNext(i, nbtn);
                         var concatString = catString(nbtn);
                         submitString(concatString, nbtn, table);
                     }
-
                 });
-
             }
         }
 
@@ -643,46 +832,140 @@
         }
         let countss = 0;
         function submitString(concat, tipe, tabel) {
-            if (concat.toUpperCase() == "APASAJA" && tipe == "d1t1") {
+            if (concat.toUpperCase() == "BAYARAN" && tipe == "d1") {
                 pengulanganTabel(tabel);
-                $('.'+tipe).css('background','lime')
-            } else if (concat.toUpperCase() == "SALAH" && tipe == "d2t1") {
+                $('.'+tipe).css('background','lime');
+                tampilkanGifBenar();
+            } else if (concat.toUpperCase() == "BENSIN" && tipe == "d2") {
                 pengulanganTabel(tabel);
-                $('.'+tipe).css('background','lime')
-            } else if (concat.toUpperCase() == "BADMOOD" && tipe == "d3t3") {
+                $('.'+tipe).css('background','lime');
+                tampilkanGifBenar();
+            } else if (concat.toUpperCase() == "KELUARGA" && tipe == "d3") {
                 pengulanganTabel(tabel);
-                $('.'+tipe).css('background','lime')
-            } else if (concat.toUpperCase() == "MISAH" && tipe == "m1t1") {
+                $('.'+tipe).css('background','lime');
+                tampilkanGifBenar();
+            } else if (concat.toUpperCase() == "BAKAT" && tipe == "d4") {
                 pengulanganTabel(tabel);
-                $('.'+tipe).css('background','lime')
-            } else if (concat.toUpperCase() == "PRKIMIA" && tipe == "m2t1") {
+                $('.'+tipe).css('background','lime');
+                tampilkanGifBenar();
+            } else if (concat.toUpperCase() == "GIATNABUNG" && tipe == "d5") {
                 pengulanganTabel(tabel);
-                $('.'+tipe).css('background','lime')
-            } else if (concat.toUpperCase() == "GANYARI" && tipe == "m3t1") {
+                $('.'+tipe).css('background','lime');
+                tampilkanGifBenar();
+            } else if (concat.toUpperCase() == "BAYAR" && tipe == "d6") {
                 pengulanganTabel(tabel);
-                $('.'+tipe).css('background','lime')
-            } else if (concat.toUpperCase() == "KURANG" && tipe == "d1t2") {
+                $('.'+tipe).css('background','lime');
+                tampilkanGifBenar();
+            } else if (concat.toUpperCase() == "LEMAS" && tipe == "d7") {
                 pengulanganTabel(tabel);
-                $('.'+tipe).css('background','lime')
-            } else if (concat.toUpperCase() == "PINGGIR" && tipe == "d2t2") {
+                $('.'+tipe).css('background','lime');
+                tampilkanGifBenar();
+            } else if (concat.toUpperCase() == "GAMBAR" && tipe == "m1") {
                 pengulanganTabel(tabel);
-                $('.'+tipe).css('background','lime')
-            } else if (concat.toUpperCase() == "MAINFILM" && tipe == "d3t2") {
+                $('.'+tipe).css('background','lime');
+                tampilkanGifBenar();
+            } else if (concat.toUpperCase() == "LARI" && tipe == "m2") {
                 pengulanganTabel(tabel);
-                $('.'+tipe).css('background','lime')
-            } else if (concat.toUpperCase() == "PINTU" && tipe == "m1t2") {
+                $('.'+tipe).css('background','lime');
+                tampilkanGifBenar();
+            } else if (concat.toUpperCase() == "SIRAM" && tipe == "m3") {
                 pengulanganTabel(tabel);
-                $('.'+tipe).css('background','lime')
-            } else if (concat.toUpperCase() == "BAIKBAIK" && tipe == "m2t2") {
+                $('.'+tipe).css('background','lime');
+                tampilkanGifBenar();
+            } else if (concat.toUpperCase() == "PERGI" && tipe == "m4") {
                 pengulanganTabel(tabel);
-                $('.'+tipe).css('background','lime')
-            } else if (concat.toUpperCase() == "NANCEP" && tipe == "m3t2") {
+                $('.'+tipe).css('background','lime');
+                tampilkanGifBenar();
+            } else if (concat.toUpperCase() == "UDADULU" && tipe == "m5") {
                 pengulanganTabel(tabel);
-                $('.'+tipe).css('background','lime')
-            } else if (concat.toUpperCase() == "MANGKOK" && tipe == "m4t2") {
+                $('.'+tipe).css('background','lime');
+                tampilkanGifBenar();
+            } else if (concat.toUpperCase() == "AIB" && tipe == "m6") {
                 pengulanganTabel(tabel);
-                $('.'+tipe).css('background','lime')
-            } 
+                $('.'+tipe).css('background','lime');
+                tampilkanGifBenar();
+            } else if (concat.toUpperCase() == "ANGKA" && tipe == "m7") {
+                pengulanganTabel(tabel);
+                $('.'+tipe).css('background','lime');
+                tampilkanGifBenar();
+            } else {
+              
+              switch (tipe) {
+                case 'd1':
+                  if(concat.toUpperCase().length === 7){
+                    detectWrong(tipe)
+                  }
+                  break;
+                case 'd2':
+                  if(concat.toUpperCase().length === 6){
+                    detectWrong(tipe)
+                  }
+                  break;
+                case 'd3':
+                  if(concat.toUpperCase().length === 8){
+                    detectWrong(tipe)
+                  }
+                  break;
+                case 'd4':
+                  if(concat.toUpperCase().length === 5){
+                    detectWrong(tipe)
+                  }
+                  break;
+                case 'd5':
+                  if(concat.toUpperCase().length === 10){
+                    detectWrong(tipe)
+                  }
+                  break;
+                case 'd6':
+                  if(concat.toUpperCase().length === 5){
+                    detectWrong(tipe)
+                  }
+                  break;
+                case 'd7':
+                  if(concat.toUpperCase().length === 5){
+                    detectWrong(tipe)
+                  }
+                  break;
+                case 'm1':
+                  if(concat.toUpperCase().length === 6){
+                    detectWrong(tipe)
+                  }
+                  break;
+                case 'm2':
+                  if(concat.toUpperCase().length === 4){
+                    detectWrong(tipe)
+                  }
+                  break;
+                case 'm3':
+                  if(concat.toUpperCase().length === 5){
+                    detectWrong(tipe)
+                  }
+                  break;
+                case 'm4':
+                  if(concat.toUpperCase().length === 5){
+                    detectWrong(tipe)
+                  }
+                  break;
+                case 'm5':
+                  if(concat.toUpperCase().length === 7){
+                    detectWrong(tipe)
+                  }
+                  break;
+                case 'm6':
+                  if(concat.toUpperCase().length === 3){
+                    detectWrong(tipe)
+                  }
+                  break;
+                case 'm7':
+                  if(concat.toUpperCase().length === 5){
+                    detectWrong(tipe)
+                  }
+                  break;
+                default:
+                  // do something
+                  break;
+              }
+            }
         }
 
         function randomIntFromInterval(min, max) { // min and max included 
