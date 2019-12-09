@@ -124,75 +124,244 @@
       <div class="row" style="padding: 10px;" >
           
           <div class="col-4" style="height: 420px;">
-              <h5 class="title">Tahap Satu</h5>
-              <div class="container">
-                  <ul class="nav nav-tabs">
-                    <li class="active"><a href="#mendatar" style="margin: 10px; color: white;">Datar</a></li>
-                    <li><a href="#menurun" style="margin: 10px; color: white;">Turun</a></li>
-                  </ul>
+            <div id="testgif"></div>
+            <div style="width: 400px; height: 650px;">
+                <h5 class="title">Yuk Kamu Pasti Bisa</h5>
                 
-                  <div class="tab-content">
-                    <div id="mendatar" class="tab-pane fade in active" >
-                      <ul>
-                        <li>
-                          <div class="divk pr-2" name="d1t1">
-                              Serigala muncul saat bulan...
-                          </div>
-                          <div class="pr-2"><button type="button" name="d1t1"
-                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="divk pr-2" name="d2t1">
-                              Bahasa inggrisnya meja adalah 
-                          </div>
-                          <div class="pr-2"><button type="button" name="d2t1"
-                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
-                          </div>
-                        </li>
-                        <!-- <li>
-                          <div class="divk pr-2" name="d3t1">
-                            Tidak merasa enak ?
-                          </div>
-                          <div class="pr-2"><button type="button" name="d3t1"
-                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
-                          </div>
-                        </li> -->
-                       
-                      </ul>  
+                <div class="container">
+                    
+                    <ul class="nav nav-tabs">
+                      <li class="active"><a href="#mendatar2" style="margin: 10px; color: white;">Mendatar</a></li>
+                      <li><a href="#menurun2" style="margin: 10px; color: white;">Menurun</a></li>
+                    </ul>
+                  
+                    <div class="tab-content">
+                      <div id="mendatar2" class="tab-pane fade in active" >
+                          <ol  class="divk pr-2">
+                          <li>
+                            <div class="divk pr-2" name="d1">
+                                Yang ditarik sebelum kapal laut berangkat ...
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="pr-2"><button type="button" name="d1"
+                                      class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                  </div>
+                                  <div class="pr-2"><button type="button" onclick="detectField('d1')"
+                                    class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                                </div>
+                                </div>
+                              </div>
+                            
+                          </li>
+                          <li>
+                            <div class="divk pr-2" name="d2">
+                                Orang batuk, dilarang minum...
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                <div class="pr-2"><button type="button" name="d2"
+                                    class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                </div>
+                                <div class="pr-2"><button type="button" onclick="detectField('d2')"
+                                  class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                              </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                              <div class="divk pr-2" name="d3">
+                                  Anda tahu katak, anaknya disebut ?
+                              </div>
+                              <div class="container">
+                                  <div class="row">
+                                    <div class="pr-2"><button type="button" name="d3"
+                                        class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                    </div>
+                                    <div class="pr-2"><button type="button" onclick="detectField('d3')"
+                                      class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                                  </div>
+                                </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="divk pr-2" name="d4">
+                                  Burung bisa terbang karena memiliki ?
+                              </div>
+                              <div class="container">
+                                  <div class="row">
+                                    <div class="pr-2"><button type="button" name="d4"
+                                        class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                    </div>
+                                    <div class="pr-2"><button type="button" onclick="detectField('d4')"
+                                      class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                                  </div>
+                                </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="divk pr-2" name="d5">
+                                orang yang suka berfoto-foto di luar negeri, mereka suka?
+                              </div>
+                              <div class="container">
+                                  <div class="row">
+                                  <div class="pr-2"><button type="button" name="d5"
+                                      class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                  </div>
+                                  <div class="pr-2"><button type="button" onclick="detectField('d5')"
+                                    class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                              <div class="divk pr-2" name="d6">
+                                  Yang dibeli seorang cowok untuk pasangannya di saat valentine biasanya...
+                              </div>
+                              <div class="container">
+                                  <div class="row">
+                                  <div class="pr-2"><button type="button" name="d6"
+                                      class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                  </div>
+                                  <div class="pr-2"><button type="button" onclick="detectField('d6')"
+                                    class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                              <div class="divk pr-2" name="d7">
+                                sering dimarahin bos karena ...
+                              </div>
+                              <div class="container">
+                                  <div class="row">
+                                    <div class="pr-2"><button type="button" name="d7"
+                                        class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                    </div>
+                                    <div class="pr-2"><button type="button" onclick="detectField('d7')"
+                                      class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                                  </div>
+                                </div>
+                              </div>
+                          </li>
                       
-
+                          <ol>
+                        
+  
+                      </div>
+                      <div id="menurun2" class="tab-pane fade">
+                          <ol  class="divk pr-2">
+                          <li>
+                            <div class="divk pr-2" name="m1">
+                                Halaman kosong bisa dijadikan tempat...
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                <div class="pr-2"><button type="button" name="m1"
+                                    class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                </div>
+                                <div class="pr-2"><button type="button" onclick="detectField('m1')"
+                                  class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                          </li>
+                          <li>
+                              <div class="divk pr-2" name="m2">
+                                Hewan tercepat pasti menggunakan ...
+                                  
+                              </div>
+                              <div class="container">
+                                  <div class="row">
+                                  <div class="pr-2"><button type="button" name="m2"
+                                      class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                  </div>
+                                  <div class="pr-2"><button type="button" onclick="detectField('m2')"
+                                    class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                                </div>
+                              </div>
+                            </div>
+                            </li>
+                          <li>
+                            <div class="divk pr-2" name="m3">
+                                Supaya mengkilat, sepatu kulit harus di...
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                <div class="pr-2"><button type="button" name="m3"
+                                    class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                </div>
+                                <div class="pr-2"><button type="button" onclick="detectField('m3')"
+                                  class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                          </li>
+                          <li>
+                            <div class="divk pr-2" name="m4">
+                                Yang tugasnya mengirim barang, pasti ...
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                <div class="pr-2"><button type="button" name="m4"
+                                    class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                </div>
+                                <div class="pr-2"><button type="button" onclick="detectField('m4')"
+                                  class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                          </li>
+                          <li>
+                              <div class="divk pr-2" name="m5">
+                                  Untuk melanjutkan tugas kedua, maka tugas kesatu harus ...
+                              </div>
+                              <div class="container">
+                                  <div class="row">
+                                  <div class="pr-2"><button type="button" name="m5"
+                                      class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                  </div>
+                                  <div class="pr-2"><button type="button" onclick="detectField('m5')"
+                                    class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                                </div>
+                              </div>
+                            </div>
+                            </li>
+                            <li>
+                                <div class="divk pr-2" name="m6">
+                                    sesuatu yang dikatakan malu dan hati berdegup cepat, namanya ...
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                    <div class="pr-2"><button type="button" name="m6"
+                                        class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                    </div>
+                                    <div class="pr-2"><button type="button" onclick="detectField('m6')"
+                                      class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                                  </div>
+                                </div>
+                              </div>
+                              </li>
+                              <li>
+                                  <div class="divk pr-2" name="m7">
+                                      Kita tidak bisa menelepon, kalau handphonenya ngga ada...
+                                  </div>
+                                  <div class="container">
+                                      <div class="row">
+                                  <div class="pr-2"><button type="button" name="m7"
+                                      class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
+                                  </div>
+                                  <div class="pr-2"><button type="button" onclick="detectField('m7')"
+                                    class="btn btn-primary btn-sm align-self-center"><i class="fa fa-close"></i></button>
+                                </div>
+                              </div>
+                            </div>
+                                </li>
+                        </ol> 
+                      </div>
                     </div>
-                    <div id="menurun" class="tab-pane fade">
-                      <ul>
-                        <li>
-                          <div class="divk pr-2" name="m1t1">
-                            Kota yang ada di sumatra ? 
-                          </div>
-                          <div class="pr-2"><button type="button" name="m1t1"
-                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="divk pr-2" name="m2t1">
-                            Masalah?
-                          </div>
-                          <div class="pr-2"><button type="button" name="m2t1"
-                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="divk pr-2" name="m3t1">
-                            Astrounot pergi keluar ?
-                          </div>
-                          <div class="pr-2"><button type="button" name="m3t1"
-                              class="btn btn-primary btn-sm align-self-center"><i class='fas fa-arrow-alt-circle-right'></i></button>
-                          </div>
-                        </li>
-                      </ul> 
-                    </div>
-                  </div>
-                </div>   
+                  </div>   
+            </div>
           </div>
           <div class="col-8" style="height: auto; margin-top: 30px;">
               <table class="tabel">
